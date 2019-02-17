@@ -1,0 +1,57 @@
+.page-users-create {
+  form {
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    background: #e1ffcd;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    .field {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      label {
+        margin-top: 10px;
+        font-size: 20px;
+
+        input {
+          font-size: 20px;
+          margin-left: 20px;
+          padding-left: 10px;
+        }
+      }
+    }
+
+    .icon-create {
+      width: 80px;
+      height: 80px;
+      border-radius: 100%;
+      position: absolute;
+      background-color: #acf99f;
+      bottom: 10px;
+      right: 10px;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+      transition: all 400ms;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      background-size: 90%;
+
+      &:hover {
+        box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.5);
+        background-color: #77e370;
+      }
+    }
+  }
+}

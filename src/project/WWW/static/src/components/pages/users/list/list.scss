@@ -1,0 +1,54 @@
+.page-users-list {
+    width: 1000px;
+    margin: 0 auto;
+
+    .users-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .user-item {
+            flex: 0 0 48%;
+            margin: 10px 0;
+            border-radius: 10px;
+            background: #fffce1;
+            box-shadow: 0 0 5px 0 black;
+            padding: 10px;
+            display: flex;
+            overflow: hidden;
+            transition: all 400ms;
+
+            &:hover {
+                box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
+            }
+
+            .wrapper-avatar {
+                width: 25%;
+                padding-bottom: 25%;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: -10px 0 -10px -10px;
+                border-radius: 0 100% 100% 0;
+                box-shadow: 2px 0 5px 1px #000000ab;
+            }
+
+            .box-info {
+                margin-left: 20px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+
+                .wrapper-name {
+                    font-size: 25px;
+                }
+
+                .wrapper-created-at {
+
+                }
+            }
+        }
+    }
+
+    @import "link_create";
+}

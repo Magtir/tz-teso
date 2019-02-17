@@ -1,0 +1,29 @@
+.link-back {
+  position: fixed;
+  left: 70px;
+  top: 60px;
+  color: #a8a8a8;
+  font-size: 25px;
+  transition: all 400ms;
+
+  &:before {
+    content: '';
+    position: absolute;
+    border: 10px solid transparent;
+    border-right: 16px solid #a8a8a8;
+    top: 50%;
+    left: -35px;
+    transform: translateY(-50%);
+    transition: all 400ms;
+  }
+
+  &:hover {
+    color: #4b4b4b;
+
+    &:before {
+      border: 12px solid transparent;
+      border-right: 18px solid #4b4b4b;
+      left: -45px;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.page-user {
+    .block-user {
+        @import "box_name";
+        @import "box_avatar";
+
+        .box-created-at {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        @import "box_delete";
+    }
+}

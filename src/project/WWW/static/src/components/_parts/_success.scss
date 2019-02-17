@@ -1,0 +1,31 @@
+.success {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 400ms;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2000;
+
+  .wrapper {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #00cf00;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  &.true {
+    opacity: 1;
+    pointer-events: auto;
+  }
+}

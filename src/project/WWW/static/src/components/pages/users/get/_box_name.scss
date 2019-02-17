@@ -1,0 +1,43 @@
+.box-name {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 500px;
+  margin: 0 auto;
+
+  .name {
+    font-size: 30px;
+  }
+
+  form {
+    width: 100%;
+    position: relative;
+
+    .input-name {
+      width: 100%;
+      font-size: 30px;
+      text-align: center;
+    }
+  }
+
+  .icon-edit {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: -100px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 90%;
+
+    &.edit {
+
+    }
+
+    &.save {
+      background-color: #c9ffc3;
+    }
+  }
+}
